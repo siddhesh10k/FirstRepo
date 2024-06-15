@@ -1,0 +1,15 @@
+// Definition for a binary tree node.
+struct TreeNode {
+    int val;         // 1. An integer value associated with the node.
+    TreeNode *left;   // 2. A pointer to the left child of the node.
+    TreeNode *right;  // 3. A pointer to the right child of the node.
+
+    // Constructor 1: Initializes a node with val = 0 and both left and right pointers set to nullptr.
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+
+    // Constructor 2: Initializes a node with a specified value x and both left and right pointers set to nullptr.
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+
+    // Constructor 3: Initializes a node with a specified value x, left child, and right child.
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
